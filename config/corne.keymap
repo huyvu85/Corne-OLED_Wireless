@@ -105,9 +105,9 @@
 
         nav {
             bindings = <
-&none  &none         &none         &none      &none           &none    &kp LC(Y)     &kp LC(V)      &kp RC(C)       &kp RC(X)  &kp LC(Z)  &trans
-&none  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp CAPSLOCK  &kp LEFT       &kp DOWN_ARROW  &trans     &trans     &trans
-&none  &none         &none         &none      &none           &none    &kp INS       &kp HOME       &trans          &trans     &kp END    &trans
+&none  &none         &none         &none      &none           &none    &kp LC(Y)     &kp LC(V)      &kp RC(C)       &kp RC(X)     &kp LC(Z)        &none
+&none  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp CAPSLOCK  &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
+&none  &none         &none         &none      &none           &none    &kp INS       &kp HOME       &kp PAGE_DOWN   &kp PG_UP     &kp END          &none
                                    &none      &none           &none    &kp ENTER     &kp BACKSPACE  &kp DELETE
             >;
         };
