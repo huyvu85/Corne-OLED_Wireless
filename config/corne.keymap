@@ -35,6 +35,13 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
         };
+
+        Copy_Cut: Copy_Cut {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COPY_CUT";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C)>, <&kp LC(X)>;
+        };
     };
 
     combos {
@@ -48,6 +55,11 @@
         bluetooth {
             bindings = <&sl 7>;
             key-positions = <39 40 41>;
+        };
+
+        sleep {
+            bindings = <&kp K_SLEEP>;
+            key-positions = <0 11>;
         };
     };
 
@@ -63,8 +75,8 @@
 
             bindings = <
 &kp TAB    &kp Q            &kp D            &kp R         &kp W              &kp B      &kp J        &kp F               &kp U         &kp P             &kp SQT           &kp BSPC
-&kp LCTRL  &HML LEFT_WIN A  &HML LEFT_ALT S  &HML LCTRL H  &HML LEFT_SHIFT T  &kp G      &kp Y        &HMR RIGHT_SHIFT N  &HMR RCTRL E  &HMR RIGHT_ALT O  &HMR RIGHT_WIN I  &kp SQT
-&kp LSHFT  &kp Z            &kp X            &kp C         &kp V              &kp B      &kp K        &kp L               &kp COMMA     &kp DOT           &kp FSLH          &kp ESC
+&Copy_Cut  &HML LEFT_WIN A  &HML LEFT_ALT S  &HML LCTRL H  &HML LEFT_SHIFT T  &kp G      &kp Y        &HMR RIGHT_SHIFT N  &HMR RCTRL E  &HMR RIGHT_ALT O  &HMR RIGHT_WIN I  &kp SQT
+&kp LC(Z)  &kp Z            &kp X            &kp C         &kp V              &kp B      &kp K        &kp L               &kp COMMA     &kp DOT           &kp FSLH          &kp ESC
                                              &lt 5 ESCAPE  &lt 4 SPACE        &kp TAB    &lt 2 ENTER  &lt 1 BACKSPACE     &lt 3 DELETE
             >;
         };
@@ -79,7 +91,7 @@
             bindings = <
 &kp TAB     &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET    &none  &none            &none      &none          &none          &none
 &bt BT_CLR  &kp SEMICOLON     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL            &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &none
-&kp LSHFT   &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH        &none  &none            &none      &none          &none          &none
+&kp LSHFT   &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH        &none  &kp SPACE        &none      &none          &none          &none
                                             &kp DOT       &kp N0        &kp MINUS            &none  &none            &none
             >;
         };
@@ -112,7 +124,7 @@
             bindings = <
 &none  &none         &none         &none      &none           &none    &kp LC(Y)     &kp LC(V)      &kp RC(C)       &kp RC(X)     &kp LC(Z)        &none
 &none  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp CAPSLOCK  &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
-&none  &none         &none         &none      &none           &none    &kp INS       &kp HOME       &kp PAGE_DOWN   &kp PG_UP     &kp END          &none
+&none  &none         &none         &none      &kp SPACE       &none    &kp INS       &kp HOME       &kp PAGE_DOWN   &kp PG_UP     &kp END          &none
                                    &none      &none           &none    &kp ENTER     &kp BACKSPACE  &kp DELETE
             >;
         };
