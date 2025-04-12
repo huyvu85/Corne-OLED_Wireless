@@ -85,6 +85,8 @@
 &kp LC(Z)  &kp Z            &kp X            &kp C         &kp V              &kp B      &kp K        &kp L               &kp COMMA     &kp DOT           &kp FSLH          &kp RC(Y)
                                              &kp ESC       &lt 4 SPACE        &kp TAB    &lt 2 ENTER  &lt 1 BACKSPACE     &lt 3 DELETE
             >;
+
+            label = "workman";
         };
 
         num {
@@ -140,7 +142,7 @@
                                    &none      &none           &none    &kp ENTER     &kp BACKSPACE  &kp DELETE
             >;
 
-            label = "navigation";
+            label = "nav";
         };
 
         mouse {
