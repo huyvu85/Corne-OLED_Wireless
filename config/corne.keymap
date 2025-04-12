@@ -61,6 +61,8 @@
         sleep {
             bindings = <&kp K_SLEEP>;
             key-positions = <0 11>;
+            slow-release;
+            layers = <0>;
         };
 
         printscreen {
