@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
@@ -53,13 +54,18 @@
         };
 
         bluetooth {
-            bindings = <&sl 7>;
+            bindings = <&mo 6>;
             key-positions = <39 40 41>;
         };
 
         sleep {
             bindings = <&kp K_SLEEP>;
             key-positions = <0 11>;
+        };
+
+        printscreen {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <39 40>;
         };
     };
 
@@ -77,7 +83,7 @@
 &kp LC(V)  &kp Q            &kp D            &kp R         &kp W              &kp B      &kp J        &kp F               &kp U         &kp P             &kp SQT           &kp RC(V)
 &Copy_Cut  &HML LEFT_WIN A  &HML LEFT_ALT S  &HML LCTRL H  &HML LEFT_SHIFT T  &kp G      &kp Y        &HMR RIGHT_SHIFT N  &HMR RCTRL E  &HMR RIGHT_ALT O  &HMR RIGHT_WIN I  &Copy_Cut
 &kp LC(Z)  &kp Z            &kp X            &kp C         &kp V              &kp B      &kp K        &kp L               &kp COMMA     &kp DOT           &kp FSLH          &kp RC(Y)
-                                             &lt 5 ESCAPE  &lt 4 SPACE        &kp TAB    &lt 2 ENTER  &lt 1 BACKSPACE     &lt 3 DELETE
+                                             &kp ESC       &lt 4 SPACE        &kp TAB    &lt 2 ENTER  &lt 1 BACKSPACE     &lt 3 DELETE
             >;
         };
 
@@ -89,11 +95,13 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET    &none  &none            &none      &none          &none          &none
-&bt BT_CLR  &kp SEMICOLON     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL            &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &none
-&kp LSHFT   &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH        &none  &kp SPACE        &none      &none          &none          &none
-                                            &kp DOT       &kp N0        &kp MINUS            &none  &none            &none
+&none  &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET    &none  &none            &none      &none          &none          &none
+&none  &kp SEMICOLON     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL            &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &none
+&none  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH        &none  &kp SPACE        &none      &none          &none          &none
+                                       &kp DOT       &kp N0        &kp MINUS            &none  &none            &none
             >;
+
+            label = "number";
         };
 
         sym {
@@ -109,15 +117,19 @@
 &none  &kp TILDE  &kp EXCLAMATION  &kp AT        &kp HASH   &kp PIPE     &none  &none            &none      &none          &none          &none
                                    &kp LPAR      &kp RPAR   &kp UNDER    &none  &none            &none
             >;
+
+            label = "symbol";
         };
 
         fun {
             bindings = <
-&none   &kp F12  &kp F7  &kp F8      &kp F9     &kp PRINTSCREEN    &trans  &trans           &trans     &trans         &trans         &trans
-&trans  &kp F11  &kp F4  &kp F5      &kp F6     &kp SCROLLLOCK     &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &trans
-&trans  &kp F10  &kp F1  &kp F2      &kp F3     &kp PAUSE_BREAK    &trans  &trans           &trans     &trans         &trans         &trans
-                         &kp K_MENU  &kp SPACE  &kp TAB            &trans  &trans           &trans
+&none   &kp F12  &kp F7  &kp F8      &kp F9     &kp PRINTSCREEN    &none  &none            &none      &none          &none          &none
+&trans  &kp F11  &kp F4  &kp F5      &kp F6     &kp SCROLLLOCK     &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &none
+&trans  &kp F10  &kp F1  &kp F2      &kp F3     &kp PAUSE_BREAK    &none  &none            &none      &none          &none          &none
+                         &kp K_MENU  &kp SPACE  &lt 5 TAB          &none  &none            &none
             >;
+
+            label = "function";
         };
 
         nav {
@@ -127,33 +139,30 @@
 &none  &none         &none         &none      &kp SPACE       &none    &kp INS       &kp HOME       &kp PAGE_DOWN   &kp PG_UP     &kp END          &none
                                    &none      &none           &none    &kp ENTER     &kp BACKSPACE  &kp DELETE
             >;
-        };
 
-        media {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
+            label = "navigation";
         };
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&none  &none         &none         &none      &none           &none    &kp RC(Y)  &kp RC(V)       &kp RC(C)       &kp LC(X)     &kp LC(Z)        &none
+&none  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
+&none  &none         &none         &none      &none           &none    &none      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
+                                   &none      &none           &none    &mkp LCLK  &mkp RCLK       &mkp MCLK
             >;
+
+            label = "mouse";
         };
 
         bluetooth {
             bindings = <
-&none       &none         &none         &none         &none         &none             &trans  &trans  &trans  &trans  &trans  &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL    &trans  &trans  &trans  &trans  &trans  &trans
-&none       &none         &none         &none         &none         &none             &trans  &trans  &trans  &trans  &trans  &trans
-                                        &trans        &trans        &trans            &trans  &trans  &trans
+&none       &none         &none         &none         &none         &none             &none  &none  &none  &none  &none  &none
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL    &none  &none  &none  &none  &none  &none
+&none       &none         &none         &none         &none         &none             &none  &none  &none  &none  &none  &none
+                                        &none         &none         &none             &none  &none  &none
             >;
+
+            label = "bluetooth";
         };
     };
 };
