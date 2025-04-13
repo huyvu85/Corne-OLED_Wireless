@@ -62,8 +62,6 @@
         sleep {
             bindings = <&kp C_SLEEP_MODE>;
             key-positions = <0 11>;
-            slow-release;
-            layers = <0>;
         };
 
         printscreen {
@@ -92,7 +90,7 @@
 &kp LC(V)  &kp Q            &kp D            &kp R         &kp W              &kp B        &kp J        &kp F               &kp U         &kp P             &kp SQT           &kp RC(V)
 &Copy_Cut  &HML LEFT_WIN A  &HML LEFT_ALT S  &HML LCTRL H  &HML LEFT_SHIFT T  &kp G        &kp Y        &HMR RIGHT_SHIFT N  &HMR RCTRL E  &HMR RIGHT_ALT O  &HMR RIGHT_WIN I  &Copy_Cut
 &kp LC(Z)  &kp Z            &kp X            &kp M         &kp C              &kp V        &kp K        &kp L               &kp COMMA     &kp DOT           &kp FSLH          &kp RC(Y)
-                                             &kp ESC       &lt 4 SPACE        &lt 5 TAB    &lt 2 ENTER  &lt 1 BACKSPACE     &lt 3 DELETE
+                                             &kp ESC       &lt 3 SPACE        &lt 5 TAB    &lt 2 ENTER  &lt 1 BACKSPACE     &lt 4 DELETE
             >;
 
             label = "workman";
@@ -132,17 +130,6 @@
             label = "symbol";
         };
 
-        fun {
-            bindings = <
-&none   &kp F12  &kp F7  &kp F8      &kp F9     &kp PRINTSCREEN    &none  &none            &none      &none          &none          &none
-&trans  &kp F11  &kp F4  &kp F5      &kp F6     &kp SCROLLLOCK     &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &none
-&trans  &kp F10  &kp F1  &kp F2      &kp F3     &kp PAUSE_BREAK    &none  &none            &none      &none          &none          &none
-                         &kp K_MENU  &kp SPACE  &lt 5 TAB          &none  &none            &none
-            >;
-
-            label = "function";
-        };
-
         nav {
             bindings = <
 &none  &none         &none         &none      &none           &none    &kp LC(Y)     &kp LC(V)      &kp RC(C)       &kp RC(X)     &kp LC(Z)        &none
@@ -152,6 +139,17 @@
             >;
 
             label = "navigate";
+        };
+
+        fun {
+            bindings = <
+&none   &kp F12  &kp F7  &kp F8      &kp F9     &kp PRINTSCREEN    &none  &none            &none      &none          &none          &none
+&trans  &kp F11  &kp F4  &kp F5      &kp F6     &kp SCROLLLOCK     &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &none
+&trans  &kp F10  &kp F1  &kp F2      &kp F3     &kp PAUSE_BREAK    &none  &none            &none      &none          &none          &none
+                         &kp K_MENU  &kp SPACE  &lt 5 TAB          &none  &none            &none
+            >;
+
+            label = "function";
         };
 
         mouse {
@@ -174,6 +172,15 @@
             >;
 
             label = "bluetooth";
+        };
+
+        media {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans            &trans      &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans            &trans      &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans            &trans      &trans  &trans  &trans
+                        &trans  &trans  &trans    &kp C_STOP  &kp C_PLAY_PAUSE  &kp C_MUTE
+            >;
         };
     };
 };
