@@ -90,7 +90,7 @@
 &kp LC(V)  &kp Q            &kp D            &kp R         &kp W              &kp B        &kp J        &kp F               &kp U         &kp P             &kp SQT           &kp RC(V)
 &Copy_Cut  &HML LEFT_WIN A  &HML LEFT_ALT S  &HML LCTRL H  &HML LEFT_SHIFT T  &kp G        &kp Y        &HMR RIGHT_SHIFT N  &HMR RCTRL E  &HMR RIGHT_ALT O  &HMR RIGHT_WIN I  &Copy_Cut
 &kp LC(Z)  &kp Z            &kp X            &kp M         &kp C              &kp V        &kp K        &kp L               &kp COMMA     &kp DOT           &kp FSLH          &kp RC(Y)
-                                             &kp ESC       &lt 3 SPACE        &lt 5 TAB    &lt 2 ENTER  &lt 1 BACKSPACE     &lt 4 DELETE
+                                             &lt 7 ESCAPE  &lt 3 SPACE        &lt 5 TAB    &lt 2 ENTER  &lt 1 BACKSPACE     &lt 4 DELETE
             >;
 
             label = "workman";
