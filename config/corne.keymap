@@ -98,6 +98,7 @@
         mute {
             bindings = <&kp C_MUTE>;
             key-positions = <11 35>;
+            layers = <0>;
         };
     };
 
