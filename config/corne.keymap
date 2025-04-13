@@ -60,7 +60,7 @@
         };
 
         sleep {
-            bindings = <&kp C_SLEEP_MODE>;
+            bindings = <&kp C_POWER>;
             key-positions = <0 11>;
         };
 
