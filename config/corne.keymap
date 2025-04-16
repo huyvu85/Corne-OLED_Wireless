@@ -107,6 +107,11 @@
             key-positions = <11 35>;
             layers = <0>;
         };
+
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <39 40>;
+        };
     };
 
     keymap {
@@ -139,7 +144,7 @@
             bindings = <
 &none  &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET    &none  &none            &none      &none          &none          &none
 &none  &kp SEMICOLON     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL            &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &none
-&none  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH        &none  &kp SPACE        &kp COMMA  &kp PERIOD     &kp SLASH      &none
+&none  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH        &none  &none            &kp COMMA  &kp PERIOD     &kp SLASH      &none
                                        &kp DOT       &kp N0        &kp MINUS            &none  &none            &none
             >;
 
@@ -178,7 +183,7 @@
             bindings = <
 &none   &kp F12  &kp F7  &kp F8      &kp F9     &kp PRINTSCREEN    &none  &none            &none      &none          &none          &none
 &trans  &kp F11  &kp F4  &kp F5      &kp F6     &kp SCROLLLOCK     &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &none
-&trans  &kp F10  &kp F1  &kp F2      &kp F3     &kp PAUSE_BREAK    &none  &none            &kp SPACE  &none          &none          &none
+&trans  &kp F10  &kp F1  &kp F2      &kp F3     &kp PAUSE_BREAK    &none  &none            &none      &none          &none          &none
                          &kp K_MENU  &kp SPACE  &lt 5 TAB          &none  &none            &none
             >;
 
