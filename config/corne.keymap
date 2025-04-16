@@ -76,7 +76,7 @@
 
         printscreen {
             bindings = <&kp PRINTSCREEN>;
-            key-positions = <39 40>;
+            key-positions = <11 23>;
             layers = <0>;
         };
 
