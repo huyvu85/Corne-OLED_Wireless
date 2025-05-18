@@ -102,11 +102,6 @@
             key-positions = <11 35>;
             layers = <0>;
         };
-
-        space {
-            bindings = <&kp SPACE>;
-            key-positions = <39 40>;
-        };
     };
 
     keymap {
@@ -221,9 +216,9 @@
         qwerty {
             label = "qwerty";
             bindings = <
-&kp LEFT_ALT    &kp Q  &kp W  &kp E       &kp R      &kp T      &kp Y         &kp U            &kp I          &kp O    &kp P          &kp RIGHT_ALT
-&kp LCTRL       &kp A  &kp S  &kp D       &kp F      &kp G      &kp H         &kp J            &kp K          &kp L    &kp RIGHT_WIN  &kp RCTRL
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp M       &kp C      &kp V      &kp N         &kp M            &kp COMMA      &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
+&kp LEFT_ALT    &kp Q  &kp W  &kp E       &kp R      &kp T      &kp Y         &kp U            &kp I          &kp O    &kp P               &kp RIGHT_ALT
+&kp LCTRL       &kp A  &kp S  &kp D       &kp F      &kp G      &kp H         &kp J            &kp K          &kp L    &HMR RIGHT_WIN SQT  &kp RCTRL
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp M       &kp C      &kp V      &kp N         &kp M            &kp COMMA      &kp DOT  &kp FSLH            &kp RIGHT_SHIFT
                               &kp ESCAPE  &kp SPACE  &kp TAB    &lt 10 ENTER  &lt 9 BACKSPACE  &lt 11 DELETE
             >;
         };
