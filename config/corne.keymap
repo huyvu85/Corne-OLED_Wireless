@@ -252,5 +252,15 @@
                          &kp K_MENU  &kp SPACE  &lt 5 TAB          &none  &none            &none
             >;
         };
+
+        layer_12 {
+            label = "canary";
+            bindings = <
+&Paste_Ins  &kp W            &kp L            &kp Y         &kp P              &kp K                    &kp J                   &kp F               &kp U         &kp P             &kp SQT           &kp ESCAPE
+&Copy_Cut   &HML LEFT_WIN C  &HML LEFT_ALT R  &HML LCTRL S  &HML LEFT_SHIFT T  &HML LC(LEFT_SHIFT) B    &HMR RC(RIGHT_SHIFT) Y  &HMR RIGHT_SHIFT N  &HMR RCTRL E  &HMR RIGHT_ALT O  &HMR RIGHT_WIN I  &kp TAB
+&kp LC(Z)   &kp J            &kp V            &kp D         &kp G              &kp V                    &kp K                   &kp L               &kp COMMA     &kp DOT           &kp FSLH          &kp RCTRL
+                                              &lt 7 ESCAPE  &lt 3 SPACE        &lt 5 TAB                &lt 2 ENTER             &lt 1 BACKSPACE     &lt 4 DELETE
+            >;
+        };
     };
 };
