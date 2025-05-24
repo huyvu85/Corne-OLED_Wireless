@@ -107,7 +107,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        canary {
+        default_layer {
             label = "canary";
             bindings = <
 &Paste_Ins  &kp W            &kp L            &kp Y          &kp P              &kp K                    &kp Z                   &kp X               &kp O         &kp U             &kp SQT           &kp ESCAPE
@@ -117,7 +117,7 @@
             >;
         };
 
-        default_layer {
+        workman {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
