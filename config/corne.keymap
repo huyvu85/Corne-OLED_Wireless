@@ -65,7 +65,7 @@
         };
 
         bluetooth {
-            bindings = <&mo 6>;
+            bindings = <&mo 8>;
             key-positions = <39 40 41>;
         };
 
@@ -86,7 +86,7 @@
         };
 
         qwerty {
-            bindings = <&to 8>;
+            bindings = <&to 11>;
             key-positions = <36 37 38>;
             layers = <0>;
         };
@@ -94,7 +94,7 @@
         workman {
             bindings = <&to 0>;
             key-positions = <36 37 38>;
-            layers = <8>;
+            layers = <11>;
         };
 
         mute {
@@ -115,13 +115,33 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&Paste_Ins  &kp Q            &kp D            &kp R         &kp W              &kp B                    &kp J                   &kp F               &kp U         &kp P             &kp SQT           &kp ESCAPE
-&Copy_Cut   &HML LEFT_WIN A  &HML LEFT_ALT S  &HML LCTRL H  &HML LEFT_SHIFT T  &HML LC(LEFT_SHIFT) G    &HMR RC(RIGHT_SHIFT) Y  &HMR RIGHT_SHIFT N  &HMR RCTRL E  &HMR RIGHT_ALT O  &HMR RIGHT_WIN I  &kp TAB
-&kp LC(Z)   &kp Z            &kp X            &kp M         &kp C              &kp V                    &kp K                   &kp L               &kp COMMA     &kp DOT           &kp FSLH          &kp RCTRL
-                                              &lt 7 ESCAPE  &lt 3 SPACE        &lt 5 TAB                &lt 2 ENTER             &lt 1 BACKSPACE     &lt 4 DELETE
+&Paste_Ins  &kp Q            &kp D            &kp R          &kp W              &kp B                    &kp J                   &kp F               &kp U         &kp P             &kp SQT           &kp ESCAPE
+&Copy_Cut   &HML LEFT_WIN A  &HML LEFT_ALT S  &HML LCTRL H   &HML LEFT_SHIFT T  &HML LC(LEFT_SHIFT) G    &HMR RC(RIGHT_SHIFT) Y  &HMR RIGHT_SHIFT N  &HMR RCTRL E  &HMR RIGHT_ALT O  &HMR RIGHT_WIN I  &kp TAB
+&kp LC(Z)   &kp Z            &kp X            &kp M          &kp C              &kp V                    &kp K                   &kp L               &kp COMMA     &kp DOT           &kp FSLH          &kp RCTRL
+                                              &lt 10 ESCAPE  &lt 5 SPACE        &lt 7 TAB                &lt 4 ENTER             &lt 3 BACKSPACE     &lt 6 DELETE
             >;
 
             label = "workman";
+        };
+
+        canary {
+            label = "canary";
+            bindings = <
+&Paste_Ins  &kp W            &kp L            &kp Y          &kp P              &kp K                    &kp Z                   &kp X               &kp O         &kp U             &kp SQT           &kp ESCAPE
+&Copy_Cut   &HML LEFT_WIN C  &HML LEFT_ALT R  &HML LCTRL S   &HML LEFT_SHIFT T  &HML LC(LEFT_SHIFT) B    &HMR RC(RIGHT_SHIFT) F  &HMR RIGHT_SHIFT N  &HMR RCTRL E  &HMR RIGHT_ALT I  &HMR RIGHT_WIN A  &kp TAB
+&kp LC(Z)   &kp J            &kp V            &kp D          &kp G              &kp Q                    &kp M                   &kp H               &kp SLASH     &kp COMMA         &kp PERIOD        &kp RCTRL
+                                              &lt 10 ESCAPE  &lt 5 SPACE        &lt 7 TAB                &lt 4 ENTER             &lt 3 BACKSPACE     &lt 6 DELETE
+            >;
+        };
+
+        func {
+            label = "func";
+            bindings = <
+&none   &kp F12  &kp F7  &kp F8      &kp F9     &kp PRINTSCREEN    &none  &none            &none      &none          &none          &none
+&trans  &kp F11  &kp F4  &kp F5      &kp F6     &kp SCROLLLOCK     &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &none
+&trans  &kp F10  &kp F1  &kp F2      &kp F3     &kp PAUSE_BREAK    &none  &none            &none      &none          &none          &none
+                         &kp K_MENU  &kp SPACE  &lt 7 TAB          &none  &none            &none
+            >;
         };
 
         num {
@@ -174,7 +194,7 @@
 &none   &kp F12  &kp F7  &kp F8      &kp F9     &kp PRINTSCREEN    &none  &none            &none      &none          &none          &none
 &trans  &kp F11  &kp F4  &kp F5      &kp F6     &kp SCROLLLOCK     &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &none
 &trans  &kp F10  &kp F1  &kp F2      &kp F3     &kp PAUSE_BREAK    &none  &none            &none      &none          &none          &none
-                         &kp C_MENU  &kp SPACE  &lt 5 TAB          &none  &none            &none
+                         &kp C_MENU  &kp SPACE  &lt 7 TAB          &none  &none            &none
             >;
 
             label = "function";
@@ -202,6 +222,16 @@
             label = "bluetooth";
         };
 
+        symbl {
+            label = "symbl";
+            bindings = <
+&none  &kp LBRC   &kp AMPS         &kp ASTERISK  &kp LPAR   &kp RBRC     &none      &none            &none      &none          &none          &none
+&none  &kp COLON  &kp DLLR         &kp PRCNT     &kp CARET  &kp PLUS     &none      &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &none
+&none  &kp TILDE  &kp EXCLAMATION  &kp AT        &kp HASH   &kp PIPE     &kp SPACE  &none            &none      &none          &none          &none
+                                   &kp LPAR      &kp RPAR   &kp UNDER    &none      &none            &none
+            >;
+        };
+
         media {
             bindings = <
 &none  &none  &none  &none  &none  &none    &none       &none             &none         &none            &none       &none
@@ -216,10 +246,10 @@
         qwerty {
             label = "qwerty";
             bindings = <
-&kp LEFT_ALT    &kp Q  &kp W  &kp E       &kp R      &kp T      &kp Y         &kp U            &kp I          &kp O    &kp P               &kp RIGHT_ALT
-&kp LCTRL       &kp A  &kp S  &kp D       &kp F      &kp G      &kp H         &kp J            &kp K          &kp L    &HMR RIGHT_WIN SQT  &kp RCTRL
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp M       &kp C      &kp V      &kp N         &kp M            &kp COMMA      &kp DOT  &kp FSLH            &kp RIGHT_SHIFT
-                              &kp ESCAPE  &kp SPACE  &kp TAB    &lt 10 ENTER  &lt 9 BACKSPACE  &lt 11 DELETE
+&kp LEFT_ALT    &kp Q  &kp W  &kp E       &kp R      &kp T      &kp Y        &kp U             &kp I         &kp O    &kp P               &kp RIGHT_ALT
+&kp LCTRL       &kp A  &kp S  &kp D       &kp F      &kp G      &kp H        &kp J             &kp K         &kp L    &HMR RIGHT_WIN SQT  &kp RCTRL
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp M       &kp C      &kp V      &kp N        &kp M             &kp COMMA     &kp DOT  &kp FSLH            &kp RIGHT_SHIFT
+                              &kp ESCAPE  &kp SPACE  &kp TAB    &lt 9 ENTER  &lt 12 BACKSPACE  &lt 2 DELETE
             >;
         };
 
@@ -230,36 +260,6 @@
 &none  &kp SEMICOLON     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL            &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &none
 &none  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH        &none  &kp SPACE        &kp COMMA  &kp PERIOD     &kp SLASH      &none
                                        &kp DOT       &kp N0        &kp MINUS            &none  &none            &none
-            >;
-        };
-
-        symbl {
-            label = "symbl";
-            bindings = <
-&none  &kp LBRC   &kp AMPS         &kp ASTERISK  &kp LPAR   &kp RBRC     &none      &none            &none      &none          &none          &none
-&none  &kp COLON  &kp DLLR         &kp PRCNT     &kp CARET  &kp PLUS     &none      &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &none
-&none  &kp TILDE  &kp EXCLAMATION  &kp AT        &kp HASH   &kp PIPE     &kp SPACE  &none            &none      &none          &none          &none
-                                   &kp LPAR      &kp RPAR   &kp UNDER    &none      &none            &none
-            >;
-        };
-
-        func {
-            label = "func";
-            bindings = <
-&none   &kp F12  &kp F7  &kp F8      &kp F9     &kp PRINTSCREEN    &none  &none            &none      &none          &none          &none
-&trans  &kp F11  &kp F4  &kp F5      &kp F6     &kp SCROLLLOCK     &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &none
-&trans  &kp F10  &kp F1  &kp F2      &kp F3     &kp PAUSE_BREAK    &none  &none            &none      &none          &none          &none
-                         &kp K_MENU  &kp SPACE  &lt 5 TAB          &none  &none            &none
-            >;
-        };
-
-        layer_12 {
-            label = "canary";
-            bindings = <
-&Paste_Ins  &kp W            &kp L            &kp Y         &kp P              &kp K                    &kp J                   &kp F               &kp U         &kp P             &kp SQT           &kp ESCAPE
-&Copy_Cut   &HML LEFT_WIN C  &HML LEFT_ALT R  &HML LCTRL S  &HML LEFT_SHIFT T  &HML LC(LEFT_SHIFT) B    &HMR RC(RIGHT_SHIFT) Y  &HMR RIGHT_SHIFT N  &HMR RCTRL E  &HMR RIGHT_ALT O  &HMR RIGHT_WIN I  &kp TAB
-&kp LC(Z)   &kp J            &kp V            &kp D         &kp G              &kp V                    &kp K                   &kp L               &kp COMMA     &kp DOT           &kp FSLH          &kp RCTRL
-                                              &lt 7 ESCAPE  &lt 3 SPACE        &lt 5 TAB                &lt 2 ENTER             &lt 1 BACKSPACE     &lt 4 DELETE
             >;
         };
     };
