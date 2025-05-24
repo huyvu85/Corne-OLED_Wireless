@@ -61,7 +61,6 @@
         caps_word {
             bindings = <&caps_word>;
             key-positions = <16 19>;
-            layers = <1>;
         };
 
         bluetooth {
@@ -77,7 +76,6 @@
         printscreen {
             bindings = <&kp PRINTSCREEN>;
             key-positions = <11 23>;
-            layers = <1>;
         };
 
         move_win {
@@ -88,11 +86,11 @@
         qwerty {
             bindings = <&to 10>;
             key-positions = <36 37 38>;
-            layers = <1>;
+            layers = <0>;
         };
 
-        workman {
-            bindings = <&to 1>;
+        default_layout {
+            bindings = <&to 0>;
             key-positions = <36 37 38>;
             layers = <10>;
         };
@@ -100,7 +98,6 @@
         mute {
             bindings = <&kp C_MUTE>;
             key-positions = <11 35>;
-            layers = <1>;
         };
     };
 
@@ -110,7 +107,7 @@
         default_layer {
             label = "canary";
             bindings = <
-&Paste_Ins  &kp W            &kp L            &kp Y         &kp P              &kp K                    &kp Z                   &kp X               &kp O         &kp U             &kp SQT           &kp ESCAPE
+&Paste_Ins  &kp W            &kp L            &kp Y         &kp P              &kp B                    &kp Z                   &kp X               &kp O         &kp U             &kp SQT           &kp ESCAPE
 &Copy_Cut   &HML LEFT_WIN C  &HML LEFT_ALT R  &HML LCTRL S  &HML LEFT_SHIFT T  &HML LC(LEFT_SHIFT) B    &HMR RC(RIGHT_SHIFT) F  &HMR RIGHT_SHIFT N  &HMR RCTRL E  &HMR RIGHT_ALT I  &HMR RIGHT_WIN A  &kp TAB
 &kp LC(Z)   &kp J            &kp V            &kp D         &kp G              &kp Q                    &kp M                   &kp H               &kp SLASH     &kp COMMA         &kp PERIOD        &kp RCTRL
                                               &lt 9 ESCAPE  &lt 4 SPACE        &lt 6 TAB                &lt 3 ENTER             &lt 2 BACKSPACE     &lt 5 DELETE
