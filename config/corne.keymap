@@ -105,7 +105,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "canary";
+            label = "カネアリー";
             bindings = <
 &Paste_Ins  &kp W            &kp L            &kp Y         &kp P              &kp B                    &kp Z                   &kp F               &kp O         &kp U             &kp SQT           &kp ESCAPE
 &Copy_Cut   &HML LEFT_WIN C  &HML LEFT_ALT R  &HML LCTRL S  &HML LEFT_SHIFT T  &HML LC(LEFT_SHIFT) G    &HMR RC(RIGHT_SHIFT) M  &HMR RIGHT_SHIFT N  &HMR RCTRL E  &HMR RIGHT_ALT I  &HMR RIGHT_WIN A  &kp TAB
