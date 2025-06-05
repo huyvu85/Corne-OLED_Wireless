@@ -105,7 +105,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "カネアリー";
+            label = "カナリア";
             bindings = <
 &Paste_Ins  &kp W            &kp L            &kp Y         &kp P              &kp B                    &kp Z                   &kp F               &kp O         &kp U             &kp SQT           &kp ESCAPE
 &Copy_Cut   &HML LEFT_WIN C  &HML LEFT_ALT R  &HML LCTRL S  &HML LEFT_SHIFT T  &HML LC(LEFT_SHIFT) G    &HMR RC(RIGHT_SHIFT) M  &HMR RIGHT_SHIFT N  &HMR RCTRL E  &HMR RIGHT_ALT I  &HMR RIGHT_WIN A  &kp TAB
@@ -115,7 +115,7 @@
         };
 
         func {
-            label = "func";
+            label = "関数";
             bindings = <
 &none   &kp F12  &kp F7  &kp F8      &kp F9     &kp PRINTSCREEN    &none  &none            &none      &none          &none          &none
 &trans  &kp F11  &kp F4  &kp F5      &kp F6     &kp SCROLLLOCK     &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &none
