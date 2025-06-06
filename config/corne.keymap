@@ -68,16 +68,6 @@
             key-positions = <39 40 41>;
         };
 
-        sleep {
-            bindings = <&kp K_SLEEP>;
-            key-positions = <0 11>;
-        };
-
-        printscreen {
-            bindings = <&kp PRINTSCREEN>;
-            key-positions = <11 23>;
-        };
-
         move_win {
             bindings = <&kp LG(LS(LEFT_ARROW))>;
             key-positions = <38 39>;
@@ -94,18 +84,13 @@
             key-positions = <36 37 38>;
             layers = <10>;
         };
-
-        mute {
-            bindings = <&kp C_MUTE>;
-            key-positions = <11 35>;
-        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "base";
+            label = "Basis";
             bindings = <
 &Paste_Ins  &kp W            &kp L            &kp Y         &kp P              &kp B                    &kp Z                   &kp F               &kp O         &kp U             &kp SQT           &kp ESCAPE
 &Copy_Cut   &HML LEFT_WIN C  &HML LEFT_ALT R  &HML LCTRL S  &HML LEFT_SHIFT T  &HML LC(LEFT_SHIFT) G    &HMR RC(RIGHT_SHIFT) M  &HMR RIGHT_SHIFT N  &HMR RCTRL E  &HMR RIGHT_ALT I  &HMR RIGHT_WIN A  &kp TAB
@@ -115,7 +100,7 @@
         };
 
         func {
-            label = "func";
+            label = "Funktion";
             bindings = <
 &none   &kp F12  &kp F7  &kp F8      &kp F9     &kp PRINTSCREEN    &none  &none            &none      &none          &none          &none
 &trans  &kp F11  &kp F4  &kp F5      &kp F6     &kp SCROLLLOCK     &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &none
@@ -138,7 +123,7 @@
                                        &kp DOT       &kp N0        &kp MINUS            &none    &none            &none
             >;
 
-            label = "number";
+            label = "Nummer";
         };
 
         sym {
@@ -155,7 +140,7 @@
                                    &kp LPAR      &kp RPAR   &kp UNDER    &none    &none            &none
             >;
 
-            label = "symbol";
+            label = "Zeichen";
         };
 
         nav {
@@ -166,7 +151,7 @@
                                    &none      &none           &none    &kp ENTER     &kp BACKSPACE  &kp DELETE
             >;
 
-            label = "navigate";
+            label = "Bewegung";
         };
 
         fun {
@@ -188,7 +173,7 @@
                                    &none      &none           &none    &mkp LCLK  &mkp RCLK       &mkp MCLK
             >;
 
-            label = "mouse";
+            label = "Maus";
         };
 
         bluetooth {
@@ -220,7 +205,7 @@
                      &none  &none  &none    &kp C_STOP  &kp C_PLAY_PAUSE  &kp C_MUTE
             >;
 
-            label = "media";
+            label = "Medien";
         };
 
         qwerty {
