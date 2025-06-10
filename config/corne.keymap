@@ -113,10 +113,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET    &none    &none            &none      &none          &none          &none
-&none  &kp SEMICOLON     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL            &none    &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &none
-&none  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH        &kp TAB  &kp SPACE        &kp COMMA  &kp PERIOD     &kp SLASH      &none
-                                       &kp DOT       &kp N0        &kp MINUS            &none    &none            &none
+&none  &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET    &kp RC(Y)  &kp RC(V)        &kp LC(C)  &kp LC(X)      &kp LC(Z)      &none
+&none  &kp SEMICOLON     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL            &none      &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &none
+&none  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH        &kp TAB    &kp SPACE        &kp SLASH  &kp COMMA      &kp PERIOD     &none
+                                       &kp DOT       &kp N0        &kp MINUS            &none      &none            &none
             >;
 
             label = "Nummer";
@@ -130,10 +130,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp LBRC   &kp AMPS         &kp ASTERISK  &kp LPAR   &kp RBRC     &none    &none            &none      &none          &none          &none
-&none  &kp COLON  &kp DLLR         &kp PRCNT     &kp CARET  &kp PLUS     &none    &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &none
-&none  &kp TILDE  &kp EXCLAMATION  &kp AT        &kp HASH   &kp PIPE     &kp TAB  &kp SPACE        &none      &none          &none          &none
-                                   &kp LPAR      &kp RPAR   &kp UNDER    &none    &none            &none
+&none  &kp LBRC   &kp AMPS         &kp ASTERISK  &kp LPAR   &kp RBRC     &kp LC(Y)  &kp LC(V)        &none      &none          &none          &none
+&none  &kp COLON  &kp DLLR         &kp PRCNT     &kp CARET  &kp PLUS     &none      &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &none
+&none  &kp TILDE  &kp EXCLAMATION  &kp AT        &kp HASH   &kp PIPE     &kp TAB    &kp SPACE        &none      &none          &none          &none
+                                   &kp LPAR      &kp RPAR   &kp UNDER    &none      &none            &none
             >;
 
             label = "Zeichen";
