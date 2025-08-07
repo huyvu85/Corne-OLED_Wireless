@@ -90,6 +90,11 @@
             key-positions = <39 40>;
             layers = <0>;
         };
+
+        ctrl-tab {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <34 33>;
+        };
     };
 
     keymap {
