@@ -88,17 +88,13 @@
         ctrl-tab {
             bindings = <&kp LC(TAB)>;
             key-positions = <34 33>;
+            layers = <0>;
         };
 
         default_layer {
             bindings = <&to 0>;
             key-positions = <38 37 36>;
-            layers = <6 8>;
-        };
-
-        qwerty {
-            bindings = <&to 8>;
-            key-positions = <35 23 11>;
+            layers = <6>;
         };
     };
 
