@@ -212,6 +212,8 @@
 &kp LSHFT  &kp Z  &kp X  &kp C    &kp V      &kp B      &kp N        &kp M            &kp FSLH      &kp COMMA  &kp DOT   &kp RGUI
                          &kp ESC  &kp SPACE  &kp TAB    &lt 2 ENTER  &lt 1 BACKSPACE  &lt 4 DELETE
             >;
+
+            label = "qwerty";
         };
     };
 };
