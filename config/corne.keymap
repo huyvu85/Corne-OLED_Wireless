@@ -94,7 +94,13 @@
         default_layer {
             bindings = <&to 0>;
             key-positions = <38 37 36>;
-            layers = <6>;
+            layers = <6 8>;
+        };
+
+        qwerty {
+            bindings = <&to 8>;
+            key-positions = <11 23 35>;
+            layers = <0>;
         };
     };
 
