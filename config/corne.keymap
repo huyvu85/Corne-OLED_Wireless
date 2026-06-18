@@ -102,11 +102,6 @@
             key-positions = <11 23 35>;
             layers = <0>;
         };
-
-        sleep {
-            bindings = <&kt K_SLEEP>;
-            key-positions = <11 23 35>;
-        };
     };
 
     keymap {
